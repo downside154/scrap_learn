@@ -1,4 +1,4 @@
-# Creating a file with html text
+# Lesson 2 - Creating a file with html text 
 import requests
 urls = ["https://wwww.naver.com/", "https://wwww.python.com/"]
 filename = "robots.txt"
