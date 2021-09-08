@@ -1,0 +1,26 @@
+# General Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+migrations/
+
+# Virtual Environments
+.env
+.venv
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+studycafe/__pycache__/views.cpython-39.pyc
