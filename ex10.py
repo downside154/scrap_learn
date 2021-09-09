@@ -45,8 +45,10 @@ for item in news_items[:3]:
     print("\n")
 
 
+###################################################
+### Combining all into a news clipping function ###
+###################################################
 
-#Combining all into a news clipping
 def google_news_clipping(url, limit=5):
 
     resp = requests.get(url)
