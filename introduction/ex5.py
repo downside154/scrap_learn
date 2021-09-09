@@ -15,7 +15,7 @@ target_img_src = target_img.get('src')
 print("Image src: ", target_img_src)
 
 target_img_resp = requests.get('http:' + target_img_src)
-out_file_path = "./output/download_image"
+out_file_path = "./output/image_ex5"
 # ./output directory must exist, the file will be saved as download_image
 print("response: ", target_img_resp)
 
