@@ -9,14 +9,18 @@ html_src = resp.text
 soup = BeautifulSoup(html_src, 'html.parser')
 
 
-#Using CSS slectors
+#Using CSS selectors
 subway_image = soup.select('#mw-content-text > div.mw-parser-output > div.center\
  > div > div > a > img')
+# get its CSS selector from the browser's selector tools:
+#   right-click element > "copy" > "copy selector"
+
 print("subway image : ", subway_image)
 print("\n")
-print("0th index image: ", subway_image[0])
-print("\n")
 
+print("0th index image : ", subway_image[0])
+print("\n")
+# it can contain a list of elements, so use indexes to find
 
 subway_image2 = soup.select('tr > td > a > img')
-print(subway_image2[1])
+print("image2 : ", subway_image2)
