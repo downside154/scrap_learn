@@ -55,7 +55,7 @@ def google_news_clipping(url, limit=5):
     html_src=resp.text
     soup = BeautifulSoup(html_src, 'html.parser')
 
-    news_item = soup.select('div[class="xrnccd"]')
+    news_items = soup.select('div[class="xrnccd"]')
 
     links= []; titles=[];  agencies=[]; reporting_dates=[];reporting_times=[];
     
