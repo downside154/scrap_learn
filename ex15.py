@@ -18,7 +18,8 @@ def download_bok_stats_by_keyword():
         driver.get("https://ecos.bok.or.kr/jsp/vis/keystat/#key")
         time.sleep(5) # delays execution for 5 secs
         
-        # find_element vs find_elements
+        # find_element - non scriptable, non iterable WebElement
+        # # find_elements - list of webElements
         items1 = driver.find_elements_by_css_selector('a[class="ng-binding"]')
         items2 = driver.find_elements_by_css_selector('a[class="a-c1-list ng-binding"]')
         items3 = driver.find_elements_by_css_selector('a[class="a-c4-list ng-binding"]')
