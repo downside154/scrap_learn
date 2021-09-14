@@ -25,3 +25,6 @@ venv/
 profile_default/
 ipython_config.py
 studycafe/__pycache__/views.cpython-39.pyc
+
+# Misc Directories
+data/*
